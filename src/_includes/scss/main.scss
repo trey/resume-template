@@ -6,7 +6,7 @@
 html { font-size: 16px; }
 
 body {
-    background: $body-color;
+    background: $white;
     padding: 1rem 1rem 8rem;
     // https://css-tricks.com/snippets/css/system-font-stack/
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -24,8 +24,8 @@ a {
     }
 
     &:hover {
-        color: #000;
-        background: #eee;
+        color: $black;
+        background: $gray-light;
     }
 }
 
@@ -34,7 +34,7 @@ main > * { margin-top: 3rem; }
 section header {
     &.small h1 {
         font-size: .8rem;
-        color: #ccc;
+        color: $gray-medium;
     }
 
     h1 {
@@ -63,7 +63,7 @@ dt {
 
     small { white-space: nowrap; }
 
-    @include gradient(lighten(#eee, 10%));
+    @include gradient(lighten($gray-light, 10%));
 }
 
 dd {
