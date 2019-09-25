@@ -1,0 +1,16 @@
+{
+    "items": [
+        {
+            "title": "Cat Wrangler",
+            "company": "Latest Company",
+            "dates": "2018-Present",
+            "description": "Doing nice and wonderful things."
+        },
+        {
+            "title": "Junior Cat Wrangler",
+            "company": "Previous Company",
+            "dates": "2016-Present",
+            "description": "Doing things that helped me grow and become as clever as I am today."
+        }
+    ]
+}

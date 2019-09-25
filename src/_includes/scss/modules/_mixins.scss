@@ -1,0 +1,15 @@
+@mixin gradient($color) {
+    background: $color;
+    background-image: linear-gradient($color, darken($color, 10%));
+}
+
+@mixin horizontal-list {
+    & { padding: 0; }
+
+    > * {
+        margin-right: .7rem;
+        line-height: 1.6rem;
+        list-style: none;
+        display: inline-block;
+    }
+}

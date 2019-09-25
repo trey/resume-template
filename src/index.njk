@@ -1,13 +1,64 @@
 ---
 layout: layouts/base.njk
-title: Blank Slate v2
-description: My cool webpage.
+name: "[YOUR NAME HERE]"
+title: "[YOUR NAME HERE]’s Résumé"
+subtitle: "[Underwater Basket Weaving and Podcasting]"
+description: "[YOUR NAME HERE] is [DOING IMPRESSIVE AND WONDERFUL THINGS]."
+summary: I'm the best there is at what I do.
 ---
 
-<h1>Hello, world!</h1>
+<header>
+    <h1>{{ name }}</h1>
+    <h2>{{ subtitle }}</h2>
+</header>
 
-<ul>
-     {% for item in list.items %}
-     <li>{{ item.name | markdown | safe }}</li>
-     {% endfor %}
-</ul>
+<main>
+    <section class="contact">
+        <header class="small"><h1>Contact</h1></header>
+        <address>[YOUR CITY]</address>
+
+        <ul>
+            {% for item in contact.items %}
+            <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section class="summary">
+        <header class="small"><h1>Summary</h1></header>
+        <p>{{ summary }}</p>
+    </section>
+
+    <section class="experience">
+        <header><h1>Experience</h1></header>
+
+        <dl>
+            {% for item in experience.items %}
+            <dt>
+                <span>{{ item.title }}{% if item.company %}; {{ item.company }}{% endif %}</span>
+                <small>{{ item.dates }}</small>
+            </dt>
+            <dd>{{ item.description }}</dd>
+            {% endfor %}
+        </dl>
+    </section>
+
+    <section class="education">
+        <header><h1>Education</h1></header>
+        <dl>
+            {% for item in education.items %}
+            <dt>{{ item.name }}</dt>
+            <dd>{{ item.description }}</dd>
+            {% endfor %}
+        </dl>
+    </section>
+
+    <section class="skills">
+        <header><h1>Skills</h1></header>
+        <ul>
+            {% for item in skills.items %}
+            <li>{{ item.name }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+</main>
