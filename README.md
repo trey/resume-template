@@ -1,6 +1,8 @@
-# Blank Slate v2
+# Résumé Template
 
-Start a fresh website using [11ty](https://www.11ty.io) to do a bunch of stuff. Most importantly, this [compiles Sass](https://twitter.com/eleven_ty/status/1154938800885420032) and automatically refreshes the browser when you make changes!
+Based on [Blank Slate v2](https://github.com/trey/blank2).
+
+Start a new repository with this template by clicking "Use this template."
 
 ## To get set up:
 
