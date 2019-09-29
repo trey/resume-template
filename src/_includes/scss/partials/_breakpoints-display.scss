@@ -15,7 +15,7 @@ $red: #ff2a2a;
 
 body::after {
     color: $black;
-    font-family: Helvetica;
+    font-family: Helvetica; /* stylelint-disable-line */
     font-size: 20px;
     font-weight: bold;
     padding: 5px;
@@ -34,6 +34,7 @@ body::after {
     @each $point, $query in $breakpoints {
         @include breakpoints-display($query) {
             $index: index(map-keys($breakpoints), $point);
+
             background: lighten($red, 5 * $index);
             content: '#{$point}';
         }
