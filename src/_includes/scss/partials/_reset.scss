@@ -8,3 +8,15 @@ html { box-sizing: border-box; }
 
 // http://css-tricks.com/links-inline-svg-staying-target-events/
 a > svg { pointer-events: none; }
+
+// https://absolutely.every-layout.dev/rudiments/axioms/
+* { max-width: 60ch; }
+
+html,
+body,
+div,
+header,
+nav,
+main,
+footer,
+hr { max-width: none; }
