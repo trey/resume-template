@@ -1,9 +1,9 @@
 module.exports = {
-    "extends": "stylelint-config-standard",
-    "rules": {
-        "indentation": 4,
-        "string-quotes": "single",
-        "at-rule-no-unknown": null,
+    'extends': 'stylelint-config-standard',
+    'rules': {
+        'indentation': 4,
+        'string-quotes': 'single',
+        'at-rule-no-unknown': null,
     },
-    "ignoreFiles": "src/_includes/scss/partials/vendor/**",
+    'ignoreFiles': ['src/**/*.md', 'src/_includes/scss/partials/vendor/**'],
 }
