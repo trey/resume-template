@@ -10,7 +10,7 @@
   "author": "Trey Piepmeier",
   "license": "SEE LICENSE IN `LICENSE`",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.1",
     "sass": "^1.32.8",
     "stylelint-config-standard": "^24.0.0"
   }
